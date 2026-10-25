@@ -1,0 +1,5 @@
+/config/database.local.php
+/storage/*.log
+/vendor/
+.env
+.env.example

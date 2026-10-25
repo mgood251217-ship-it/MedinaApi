@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine On
+RewriteRule ^(?:config|models|middlewares|controllers|helper|routes|storage)(?:/|$) - [F,L]
+RewriteRule (^|/)\. - [F,L]
+RewriteRule ^(?:bootstrap|router)\.php$ - [F,L]
+RewriteRule ^(?!public(?:/|$)).*$ public/index.php [QSA,L]
